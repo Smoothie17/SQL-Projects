@@ -1,0 +1,9 @@
+
+select s22.name,s22.position,up.team,s22.I_F_goals as goals,
+(I_F_primaryAssists + I_F_secondaryAssists) as assists,s22.I_F_points as points
+from nhl.season2022 as s22
+left join nhl.playerslookup as up
+on s22.playerId = up.playerId
+where situation = 'all'
+order by points desc
+limit 10;
