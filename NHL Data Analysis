@@ -1,3 +1,7 @@
+--Cleaning and exploring NHL data from season 2021/22 and comparing to season 2022/23
+
+-- Some of the skills used include aggregation, math conversions, datetime funcs, joins, add/delete tables, window functions, and case statements.
+
 -- Checking Datatypes
 
 SELECT 
